@@ -1,0 +1,648 @@
+Script started on 2026-07-15 11:46:16+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="29"]
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mwhoami[27m
+[7mhostname[27m
+[7mpwd[27m
+[7mdate[27m[A[A[A]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# whoami
+hostname
+pwd
+date
+[?2004lroot
+eltex-practice2-v44
+/root
+Wed Jul 15 11:46:22 AM UTC 2026
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mgit config --global user.name "Илья Рубе"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit config --global user.name "Илья Рубе"
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mgit config --global user.email "[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit config --global user.email "шюб[K[K[Ki.rubbe[K[Ke@mail;.[K[K.ru@[K"
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mgit config --global init.defaultBranch main[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit config --global init.defaultBranch main
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mgit config --global --list[27mgit config --global --list
+[?2004l[?1h=user.name=Илья Рубе[m
+user.email=i.rube@mail.ru[m
+init.defaultbranch=main[m
+[K[?1l>[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mssh-keygen -t ed25519 -f /root/.ssh/IlyaRube[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cssh-keygen -t ed25519 -f /root/.ssh/IlyaRube
+[?2004lGenerating public/private ed25519 key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/IlyaRube
+Your public key has been saved in /root/.ssh/IlyaRube.pub
+The key fingerprint is:
+SHA256:BkDkEt2dGO9e6EpCwX8MGwKaA+pxp/QvjBk++FsEaes root@eltex-practice2-v44
+The key's randomart image is:
++--[ED25519 256]--+
+|. o++..+ .       |
+|oo =o.o.o        |
+|=..*=.+ .        |
+|..=.*+ B .       |
+| . +.oo S .      |
+|  +.* .= .       |
+| . E.+..o        |
+|  . oo..         |
+|   o. .          |
++----[SHA256]-----+
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mls -l /root/.ssh/IlyaRube /root/.ssh/IlyaRube.pub[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l /root/.ssh/IlyaRube /root/.ssh/IlyaRube.pub
+[?2004l-rw------- 1 root root 419 Jul 15 11:49 /root/.ssh/IlyaRube
+-rw-r--r-- 1 root root 106 Jul 15 11:49 /root/.ssh/IlyaRube.pub
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mcat /root/.ssh/IlyaRube.pub[27mcat /root/.ssh/IlyaRube.pub
+[?2004lssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHN0BXZs/FdoHUgJA7eZ1OvAuhCONZJZ8tNipy7t3j70 root@eltex-practice2-v44
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mgh auth login[27mgh auth login
+[?2004l7[?25l8[0G[2K[0;1;92m? [0m[0;1;99mWhat account do you want to log into?[0m  [0;36m[Use arrows to move, type to filter][0m
+[0;1;36m> GitHub.com[0m
+[0;39m  GitHub Enterprise Server[0m
+7[1A[0G[1A[0G8[?25h8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat account do you want to log into?[0m[0;36m GitHub.com[0m
+7[?25l8[0G[2K[0;1;92m? [0m[0;1;99mWhat is your preferred protocol for Git operations on this host?[0m  [0;36m[Use arrows to move, type to filter][0m
+[0;1;36m> HTTPS[0m
+[0;39m  SSH[0m
+7[1A[0G[1A[0G8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat is your preferred protocol for Git operations on this host?[0m  [0;36m[Use arrows to move, type to filter][0m
+[0;39m  HTTPS[0m
+[0;1;36m> SSH[0m
+7[1A[0G8[?25h8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat is your preferred protocol for Git operations on this host?[0m[0;36m SSH[0m
+7[?25l8[0G[2K[0;1;92m? [0m[0;1;99mUpload your SSH public key to your GitHub account?[0m  [0;36m[Use arrows to move, type to filter][0m
+[0;1;36m> /root/.ssh/IlyaRube.pub[0m
+[0;39m  Skip[0m
+7[1A[0G[1A[0G8[?25h8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mUpload your SSH public key to your GitHub account?[0m[0;36m /root/.ssh/IlyaRube.pub[0m
+[0G[2K[0;1;92m? [0m[0;1;99mTitle for your SSH key: [0m[0;39m(GitHub CLI) [0m[?25l[?25l7[999;999f[6n8[?25h[6neltex-practice2-v44[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1B[0G[1A[?25h[0G[2K[0;1;92m? [0m[0;1;99mTitle for your SSH key: [0m[0;36meltex-practice2-v44[0m
+7[?25l8[0G[2K[0;1;92m? [0m[0;1;99mHow would you like to authenticate GitHub CLI?[0m  [0;36m[Use arrows to move, type to filter][0m
+[0;1;36m> Login with a web browser[0m
+[0;39m  Paste an authentication token[0m
+7[1A[0G[1A[0G8[?25h8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mHow would you like to authenticate GitHub CLI?[0m[0;36m Login with a web browser[0m
+
+[0;33m![0m First copy your one-time code: [0;1;39mB948-A8EB[0m
+[0;1;39mPress Enter[0m to open github.com in your browser... 
+[0;31m![0m Failed opening a web browser at https://github.com/login/device
+  exec: "xdg-open,x-www-browser,www-browser,wslview": executable file not found in $PATH
+  Please try entering the URL in your browser manually
+
+[0;32m✓[0m Authentication complete.
+- gh config set -h github.com git_protocol ssh
+[0;32m✓[0m Configured git protocol
+[0;33m![0m Authentication credentials saved in plain text
+[0;32m✓[0m Uploaded the SSH key to your GitHub account: [0;1;39m/root/.ssh/IlyaRube.pub[0m
+[0;32m✓[0m Logged in as [0;1;39mIlyaRube[0m
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# 
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mgh auth setup-git --hostname github.com[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgh auth setup-git --hostname github.com
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mgh auth status[27mgh auth status
+[?2004l[0;1;39mgithub.com[0m
+  [0;32m✓[0m Logged in to github.com account [0;1;39mIlyaRube[0m (/root/.config/gh/hosts.yml)
+  - Active account: [0;1;39mtrue[0m
+  - Git operations protocol: [0;1;39mssh[0m
+  - Token: [0;1;39mgho_************************************[0m
+  - Token scopes: [0;1;39m'admin:public_key', 'gist', 'read:org', 'repo'[0m
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mgh repo create --public EltexModule1-Practice2[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgh repo create --public EltexModule1-Practice2
+[?2004l[0;32m✓[0m Created repository IlyaRube/EltexModule1-Practice2 on GitHub
+  https://github.com/IlyaRube/EltexModule1-Practice2
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mgh repo view IlyaRube/EltexModule1-Practice2[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgh repo view IlyaRube/EltexModule1-Practice2
+[?2004l]11;?\[6n[0;1;39mIlyaRube/EltexModule1-Practice2[0m
+[38;5;242mNo description provided[m
+
+[38;5;242mThis repository does not have a README[m
+
+[38;5;242mView this repository on GitHub: https://github.com/IlyaRube/EltexModule1-Practice2[m
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mmkdir -p /root/EltexModule1-Practice2[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkdir -p /root/EltexModule1-Practice2
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mecho "# Практика 2, модуль 1, Элтекс" > README.md[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "# Практика 2, модуль 1, Элтекс" > README.md
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mgit init[27mgit init
+[?2004lInitialized empty Git repository in /root/.git/
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mgit add README.md[27mgit add README.md
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mgit branch -M main[27mgit branch -M main
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mgit remote add origin git@github.com:IlyaRube/EltexModule1-Practice2.git[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit remote add origin git@github.com:IlyaRube/EltexModule1-Practice2.git
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# пше ые[K[K[K[K[K[Kgit status
+[?2004lOn branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	[32mnew file:   README.md[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.bash_history[m
+	[31m.bashrc[m
+	[31m.cache/[m
+	[31m.config/[m
+	[31m.gitconfig[m
+	[31m.lesshst[m
+	[31m.profile[m
+	[31m.ssh/[m
+	[31m.viminfo[m
+	[31metc_backup.7z[m
+	[31metc_backup.tar.bz2[m
+	[31metc_backup.tar.gz[m
+	[31metc_backup/[m
+	[31metc_backup_7zip/[m
+	[31metc_backup_gzip/[m
+	[31mpractice2_eltex-v44_part1.log[m
+	[31mpractice2_eltex-v44_part1_old.log[m
+	[31mpractice2_eltex-v44_part2.log[m
+	[31mpractice2_eltex-v44_part3.log[m
+	[31mrun_part2_clean.sh[m
+	[31mserver1_practice2_eltex-v44_key.pub[m
+
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# git remote -v
+[?2004lorigin	git@github.com:IlyaRube/EltexModule1-Practice2.git (fetch)
+origin	git@github.com:IlyaRube/EltexModule1-Practice2.git (push)
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mgit push -u origin main[27mgit push -u origin main
+[?2004lerror: src refspec main does not match any
+[31merror: failed to push some refs to 'github.com:IlyaRube/EltexModule1-Practice2.git'
+[m[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mrm -rf /root/.git[27m
+[7mrm -f /root/README.md[27m[A]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# rm -rf /root/.git
+rm -f /root/README.md
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mgit status[27mgit status
+[?2004lfatal: not a git repository (or any of the parent directories): .git
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mcd /root/EltexModule1-Practice2[27m
+[7mpwd[27m[A]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# cd /root/EltexModule1-Practice2
+pwd
+[?2004l/root/EltexModule1-Practice2
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mecho "# Практика 2, модуль 1, Элтекс" > README.md[27mecho "# Практика 2, модуль 1, Элтекс" > README.md
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mgit init[27mgit init
+[?2004lInitialized empty Git repository in /root/EltexModule1-Practice2/.git/
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mgit add README.md[27mgit add README.md
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mgit commit -m "first commit"[27mgit commit -m "first commit"
+[?2004l[main (root-commit) 0d12f02] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mgit branch -M main[27mgit branch -M main
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mgit remote add origin git@github.com:IlyaRube/EltexModule1-Practice2.[27m[7mg[27m[7mit[27m[A]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# git remote add origin git@github.com:IlyaRube/EltexModule1-Practice2.git
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mgit status[27mgit status
+[?2004lOn branch main
+nothing to commit, working tree clean
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mgit log --oneline[27mgit log --oneline
+[?2004l[?1h=[33m0d12f02[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m first commit[m
+[K[?1l>[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mgit remote -v[27mgit remote -v
+[?2004lorigin	git@github.com:IlyaRube/EltexModule1-Practice2.git (fetch)
+origin	git@github.com:IlyaRube/EltexModule1-Practice2.git (push)
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# \[K[7mgit push -u origin main[27mgit push -u origin main
+[?2004lThe authenticity of host 'github.com (140.82.121.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mcat > /root/.ssh/config <<'EOF'[27m
+[7mHost github.com[27m
+[7m    HostName github.com[27m
+[7m    User git[27m
+[7m    IdentityFile /root/.ssh/IlyaRube[27m
+[7m    IdentitiesOnly yes[27m
+[7mEOF[27m[A[A[A[A[A[A]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# cat > /root/.ssh/config <<'EOF'
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile /root/.ssh/IlyaRube
+    IdentitiesOnly yes
+EOF
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mchmod 600 /root/.ssh/config[27mchmod 600 /root/.ssh/config
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mchmod 600 /root/.ssh/IlyaRube[27mchmod 600 /root/.ssh/IlyaRube
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mchmod 644 /root/.ssh/IlyaRube.pub[27mchmod 644 /root/.ssh/IlyaRube.pub
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mssh -T git@github.com[27mssh -T git@github.com
+[?2004lHi IlyaRube! You've successfully authenticated, but GitHub does not provide shell access.
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mgit push -u origin main[27mgit push -u origin main
+[?2004lEnumerating objects: 3, done.
+Counting objects:  33% (1/3)Counting objects:  66% (2/3)Counting objects: 100% (3/3)Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 274 bytes | 274.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:IlyaRube/EltexModule1-Practice2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# Script started on 2026-07-15 13:11:04+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="148" LINES="29"]
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# exitrm -rf /root/module1find module1 -type drm -rf /root/module1exit[K[Kexit[K[7mecho "ЛОГИРОВАНИЕ_ВОЗОБНОВЛЕНО"[27m
+[7mtail -n 5 /root/practice2_eltex-v44_part3.log[27m[A]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# echo "ЛОГИРОВАНИЕ_ВОЗОБНОВЛЕНО"
+tail -n 5 /root/practice2_eltex-v44_part3.log
+[?2004lЛОГИРОВАНИЕ_ВОЗОБНОВЛЕНО
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# Script started on 2026-07-15 13:11:04+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="148" LINES="29"]
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# exitrm -rf /root/module1find module1 -type drm -rf /root/module1exit[K[Kexit[K[7mecho "ЛОГИРОВАНИЕ_ВОЗОБНОВЛЕНО"[27m
+[7mtail -n 5 /root/practice2_eltex-v44_part3.log[27m[A]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# echo "ЛОГИРОВАНИЕ_ВОЗОБНОВЛЕНО"
+tail -n 5 /root/practice2_eltex-v44_part3.log
+[?2004lЛОГИРОВАНИЕ_ВОЗОБНОВЛЕНО
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [K]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [K]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [K]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [K]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [K]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [K]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-07-15 13:17:30+00:00 [COMMAND_EXIT_CODE="0"]
+
+Script done on 2026-07-15 13:20:02+00:00 [COMMAND_EXIT_CODE="0"]
+
+===== ВОССТАНОВЛЕННАЯ ЧАСТЬ ПОСЛЕ РАЗРЫВА SSH =====
+PS D:\eltexC\EltexModule1> ssh -p 44556 eltex-v44@217.71.138.1
+eltex-v44@217.71.138.1's password:
+Linux eltex-2026-summer 6.1.0-50-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.176-1 (2026-07-02) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Wed Jul 15 18:30:42 2026 from 212.164.38.116
+eltex-v44@eltex-2026-summer:~$ ssh root@172.16.9.218
+root@172.16.9.218's password:
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-134-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Jul 15 01:01:18 PM UTC 2026
+
+  System load:  0.0                Processes:              116
+  Usage of /:   43.3% of 14.66GB   Users logged in:        1
+  Memory usage: 8%                 IPv4 address for ens18: 172.16.9.218
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+89 updates can be applied immediately.
+11 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+2 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+Рубе Илья 2026-07-10 04:58:15
+Last login: Wed Jul 15 11:37:03 2026 from 172.16.8.4
+root@eltex-practice2-v44:~# mkdir -p module1/task1 module1/task2 module1/task3
+root@eltex-practice2-v44:~# find module1 -type d
+module1
+module1/task2
+module1/task1
+module1/task3
+root@eltex-practice2-v44:~# exit
+logout
+Connection to 172.16.9.218 closed.
+eltex-v44@eltex-2026-summer:~$ scp "/home/eltex-v44/Раздел 1.pdf" root@172.16.9.218:/root/EltexModule1-Practice2/module1/task1/
+root@172.16.9.218's password:
+scp: dest open "/root/EltexModule1-Practice2/module1/task1/": No such file or directory
+scp: failed to upload file /home/eltex-v44/\320\240\320\260\320\267\320\264\320\265\320\273 1.pdf to /root/EltexModule1-Practice2/module1/task1/
+eltex-v44@eltex-2026-summer:~$ scp "/home/eltex-v44/Раздел 2.pdf" root@172.16.9.218:/root/EltexModule1-Practice2/module1/task2/
+root@172.16.9.218's password:
+scp: dest open "/root/EltexModule1-Practice2/module1/task2/": No such file or directory
+scp: failed to upload file /home/eltex-v44/\320\240\320\260\320\267\320\264\320\265\320\273 2.pdf to /root/EltexModule1-Practice2/module1/task2/
+eltex-v44@eltex-2026-summer:~$ scp "/home/eltex-v44/Раздел 3.pdf" root@172.16.9.218:/root/EltexModule1-Practice2/module1/task3/
+root@172.16.9.218's password:
+scp: dest open "/root/EltexModule1-Practice2/module1/task3/": No such file or directory
+scp: failed to upload file /home/eltex-v44/\320\240\320\260\320\267\320\264\320\265\320\273 3.pdf to /root/EltexModule1-Practice2/module1/task3/
+eltex-v44@eltex-2026-summer:~$
+eltex-v44@eltex-2026-summer:~$ ssh root@172.16.9.218
+root@172.16.9.218's password:
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-134-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Jul 15 01:02:34 PM UTC 2026
+
+  System load:  0.04               Processes:              116
+  Usage of /:   43.3% of 14.66GB   Users logged in:        1
+  Memory usage: 7%                 IPv4 address for ens18: 172.16.9.218
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+89 updates can be applied immediately.
+11 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+2 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+Рубе Илья 2026-07-10 04:58:15
+Last login: Wed Jul 15 13:01:18 2026 from 172.16.8.4
+root@eltex-practice2-v44:~# cd /root/EltexModule1-Practice2
+find module1 -type f -ls
+find: ‘module1’: No such file or directory
+root@eltex-practice2-v44:~/EltexModule1-Practice2# cd /root/EltexModule1-Practice2
+root@eltex-practice2-v44:~/EltexModule1-Practice2# find module1 -type f -ls
+find: ‘module1’: No such file or directory
+root@eltex-practice2-v44:~/EltexModule1-Practice2# ls
+README.md
+root@eltex-practice2-v44:~/EltexModule1-Practice2# cd /root/EltexModule1-Practice2
+mkdir -p module1/task1 module1/task2 module1/task3
+find module1 -type d
+module1
+module1/task2
+module1/task1
+module1/task3
+root@eltex-practice2-v44:~/EltexModule1-Practice2# rm -rf /root/module1
+root@eltex-practice2-v44:~/EltexModule1-Practice2# exit
+logout
+Connection to 172.16.9.218 closed.
+eltex-v44@eltex-2026-summer:~$ scp "/home/eltex-v44/Раздел 1.pdf" root@172.16.9.218:/root/EltexModule1-Practice2/module1/task1/
+root@172.16.9.218's password:
+Раздел 1.pdf                                                                    100% 1303KB 131.5MB/s   00:00
+eltex-v44@eltex-2026-summer:~$ scp "/home/eltex-v44/Раздел 2.pdf" root@172.16.9.218:/root/EltexModule1-Practice2/module1/task2/
+root@172.16.9.218's password:
+Раздел 2.pdf                                                                    100%  435KB  93.0MB/s   00:00
+eltex-v44@eltex-2026-summer:~$ scp "/home/eltex-v44/Раздел 3.pdf" root@172.16.9.218:/root/EltexModule1-Practice2/module1/task3/
+root@172.16.9.218's password:
+Раздел 3.pdf                                                                    100%  262KB  90.8MB/s   00:00
+eltex-v44@eltex-2026-summer:~$ ssh root@172.16.9.218
+root@172.16.9.218's password:
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-134-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Jul 15 01:04:53 PM UTC 2026
+
+  System load:  0.01               Processes:              118
+  Usage of /:   43.3% of 14.66GB   Users logged in:        1
+  Memory usage: 7%                 IPv4 address for ens18: 172.16.9.218
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+89 updates can be applied immediately.
+11 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+2 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+Рубе Илья 2026-07-10 04:58:15
+Last login: Wed Jul 15 13:03:16 2026 from 172.16.8.4
+root@eltex-practice2-v44:~# cd /root/EltexModule1-Practice2
+root@eltex-practice2-v44:~/EltexModule1-Practice2# find module1 -type f -ls
+     6482    436 -rw-r--r--   1 root     root       445050 Jul 15 13:05 module1/task2/\320\240\320\260\320\267\320\264\320\265\320\273\ 2.pdf
+     6481   1304 -rw-r--r--   1 root     root      1334551 Jul 15 13:04 module1/task1/\320\240\320\260\320\267\320\264\320\265\320\273\ 1.pdf
+     6483    264 -rw-r--r--   1 root     root       268358 Jul 15 13:05 module1/task3/\320\240\320\260\320\267\320\264\320\265\320\273\ 3.pdf
+root@eltex-practice2-v44:~/EltexModule1-Practice2# ls
+module1  README.md
+root@eltex-practice2-v44:~/EltexModule1-Practice2# cd module1/
+root@eltex-practice2-v44:~/EltexModule1-Practice2/module1# ls
+task1  task2  task3
+root@eltex-practice2-v44:~/EltexModule1-Practice2/module1# cd task1/
+root@eltex-practice2-v44:~/EltexModule1-Practice2/module1/task1# ls
+'Раздел 1.pdf'
+root@eltex-practice2-v44:~/EltexModule1-Practice2/module1/task1# cd /root/EltexModule1-Practice2
+root@eltex-practice2-v44:~/EltexModule1-Practice2# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        module1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+root@eltex-practice2-v44:~/EltexModule1-Practice2# git add .
+root@eltex-practice2-v44:~/EltexModule1-Practice2# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   "module1/task1/\320\240\320\260\320\267\320\264\320\265\320\273 1.pdf"
+        new file:   "module1/task2/\320\240\320\260\320\267\320\264\320\265\320\273 2.pdf"
+        new file:   "module1/task3/\320\240\320\260\320\267\320\264\320\265\320\273 3.pdf"
+
+root@eltex-practice2-v44:~/EltexModule1-Practice2# git commit -m "Add module 1 раздел 3 reports"
+[main 11d61eb] Add module 1 раздел 3 reports
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "module1/task1/\320\240\320\260\320\267\320\264\320\265\320\273 1.pdf"
+ create mode 100644 "module1/task2/\320\240\320\260\320\267\320\264\320\265\320\273 2.pdf"
+ create mode 100644 "module1/task3/\320\240\320\260\320\267\320\264\320\265\320\273 3.pdf"
+root@eltex-practice2-v44:~/EltexModule1-Practice2# git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 1.56 MiB | 7.98 MiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:IlyaRube/EltexModule1-Practice2.git
+   0d12f02..11d61eb  main -> main
+root@eltex-practice2-v44:~/EltexModule1-Practice2# git log --oneline --decorate -5
+11d61eb (HEAD -> main, origin/main) Add module 1 раздел 3 reports
+0d12f02 first commit
+root@eltex-practice2-v44:~/EltexModule1-Practice2# cd /root
+root@eltex-practice2-v44:~# mkdir -p /root/EltexModule1-Practice2_clone
+root@eltex-practice2-v44:~# cd /root/EltexModule1-Practice2_clone
+root@eltex-practice2-v44:~/EltexModule1-Practice2_clone# ps aux | grep '[s]cript'
+root       19842  0.0  0.0   5704  2336 pts/0    S+   11:46   0:00 script -a -f /root/practice2_eltex-v44_part3.log
+root@eltex-practice2-v44:~/EltexModule1-Practice2_clone# tail -n 20 /root/practice2_eltex-v44_part3.log
+    User git
+    IdentityFile /root/.ssh/IlyaRube
+    IdentitiesOnly yes
+EOF
+root@eltex-practice2-v44:~/EltexModule1-Practice2# chmod 600 /root/.ssh/config
+root@eltex-practice2-v44:~/EltexModule1-Practice2# chmod 600 /root/.ssh/IlyaRube
+root@eltex-practice2-v44:~/EltexModule1-Practice2# chmod 644 /root/.ssh/IlyaRube.pub
+root@eltex-practice2-v44:~/EltexModule1-Practice2# ssh -T git@github.com
+Hi IlyaRube! You've successfully authenticated, but GitHub does not provide shell access.
+root@eltex-practice2-v44:~/EltexModule1-Practice2# git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 274 bytes | 274.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:IlyaRube/EltexModule1-Practice2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+root@eltex-practice2-v44:~/EltexModule1-Practice2# root@eltex-practice2-v44:~/EltexModule1-Practice2_clone#stat /root/practice2_eltex-v44_part3.logg
+  File: /root/practice2_eltex-v44_part3.log
+  Size: 16942           Blocks: 48         IO Block: 4096   regular file
+Device: 252,0   Inode: 662793      Links: 1
+Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2026-07-15 13:10:18.315739651 +0000
+Modify: 2026-07-15 12:00:57.776333043 +0000
+Change: 2026-07-15 12:00:57.776333043 +0000
+ Birth: 2026-07-15 11:46:16.374325624 +0000
+root@eltex-practice2-v44:~/EltexModule1-Practice2_clone# echo "ПРОВЕРКА_ЛОГИРОВАНИЯ_$(date +%H:%M:%S)"
+ПРОВЕРКА_ЛОГИРОВАНИЯ_13:10:49
+root@eltex-practice2-v44:~/EltexModule1-Practice2_clone# tail -n 5 /root/practice2_eltex-v44_part3.log
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:IlyaRube/EltexModule1-Practice2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+===== КОНЕЦ ВОССТАНОВЛЕННОЙ ЧАСТИ =====
+
+Script started on 2026-07-15 13:23:12+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="148" LINES="27"]
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mecho "===== ЛОГИРОВАНИЕ ВОЗОБНОВЛЕНО ====="[27m
+[7mdate[27m
+[7mwhoami[27m
+[7mhostname[27m
+[7mpwd[27m[A[A[A[A]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# echo "===== ЛОГИРОВАНИЕ ВОЗОБНОВЛЕНО ====="
+date
+whoami
+hostname
+pwd
+[?2004l===== ЛОГИРОВАНИЕ ВОЗОБНОВЛЕНО =====
+Wed Jul 15 01:23:19 PM UTC 2026
+root
+eltex-practice2-v44
+/root
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mmkdir -p /root/EltexModule1-Practice2_clone[27m
+[7mcd /root/EltexModule1-Practice2_clone[27m[Amkdir -p /root/EltexModule1-Practice2_clone
+cd /root/EltexModule1-Practice2_clone
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# ды [K[K[Kls -la
+[?2004ltotal 8
+drwxr-xr-x  2 root root 4096 Jul 15 13:09 [0m[01;34m.[0m
+drwx------ 10 root root 4096 Jul 15 13:22 [01;34m..[0m
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [7mgit clone git@github.com:IlyaRube/EltexModule1-Practice2.git .[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone git@github.com:IlyaRube/EltexModule1-Practice2.git .
+[?2004lCloning into '.'...
+remote: Enumerating objects: 12, done.[K
+remote: Counting objects:   8% (1/12)[Kremote: Counting objects:  16% (2/12)[Kremote: Counting objects:  25% (3/12)[Kremote: Counting objects:  33% (4/12)[Kremote: Counting objects:  41% (5/12)[Kremote: Counting objects:  50% (6/12)[Kremote: Counting objects:  58% (7/12)[Kremote: Counting objects:  66% (8/12)[Kremote: Counting objects:  75% (9/12)[Kremote: Counting objects:  83% (10/12)[Kremote: Counting objects:  91% (11/12)[Kremote: Counting objects: 100% (12/12)[Kremote: Counting objects: 100% (12/12), done.[K
+remote: Compressing objects:  12% (1/8)[Kremote: Compressing objects:  25% (2/8)[Kremote: Compressing objects:  37% (3/8)[Kremote: Compressing objects:  50% (4/8)[Kremote: Compressing objects:  62% (5/8)[Kremote: Compressing objects:  75% (6/8)[Kremote: Compressing objects:  87% (7/8)[Kremote: Compressing objects: 100% (8/8)[Kremote: Compressing objects: 100% (8/8), done.[K
+Receiving objects:   8% (1/12)Receiving objects:  16% (2/12)Receiving objects:  25% (3/12)Receiving objects:  33% (4/12)Receiving objects:  41% (5/12)Receiving objects:  50% (6/12)Receiving objects:  58% (7/12)Receiving objects:  66% (8/12)Receiving objects:  75% (9/12)Receiving objects:  83% (10/12)remote: Total 12 (delta 0), reused 12 (delta 0), pack-reused 0 (from 0)[K
+Receiving objects:  91% (11/12), 1.45 MiB | 2.87 MiB/sReceiving objects: 100% (12/12), 1.45 MiB | 2.87 MiB/sReceiving objects: 100% (12/12), 1.56 MiB | 3.09 MiB/s, done.
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# git log --online --decorate -5
+[?2004lfatal: unrecognized argument: --online
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# git log --online --decorate -5[C[1@e
+[?2004l[?1h=[33m11d61eb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Add module 1 раздел 3 reports[m
+[33m0d12f02[m first commit[m
+[K[?1l>[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# gi[K[Kfind modulke[K[Ke [K1 -maxdepth 2 -type df[Kf[K[Kf 
+[?2004lmodule1/task2/Раздел 2.pdf
+module1/task1/Раздел 1.pdf
+module1/task3/Раздел 3.pdf
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# find module1 -maxdepth 2 -type f | sort
+[?2004lmodule1/task1/Раздел 1.pdf
+module1/task2/Раздел 2.pdf
+module1/task3/Раздел 3.pdf
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [7mcd /root/EltexModule1-Practice2[27mcd /root/EltexModule1-Practice2
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mecho "Отчёты по модулю 1 добавлены в каталоги module1/task1, task2 и task3." >> README.md[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "Отчёты по модулю 1 добавлены в каталоги module1/task1, task2 и task3." >> README.md
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# пше [K[K[K[Kgit do[Kiff
+[?2004l[?1h=[1mdiff --git a/README.md b/README.md[m[m
+[1mindex 6e3faec..c1a111d 100644[m[m
+[1m--- a/README.md[m[m
+[1m+++ b/README.md[m[m
+[36m@@ -1 +1,2 @@[m[m
+ # Практика 2, модуль 1, Элтекс[m[m
+[32m+[m[32mОтчёты по модулю 1 добавлены в каталоги module1/task1, task2 и task3.[m[m
+[K[?1l>[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mgit add README.md[27mgit add README.md
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mgit commit -m "Update README"[27mgit commit -m "Update README"
+[?2004l[main 10b7610] Update README
+ 1 file changed, 1 insertion(+)
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mgit push[27mgit push
+[?2004lEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 426 bytes | 426.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:IlyaRube/EltexModule1-Practice2.git
+   11d61eb..10b7610  main -> main
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mgit log --oneline --decorate -3[27mgit log --oneline --decorate -3
+[?2004l[?1h=[33m10b7610[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Update README[m
+[33m11d61eb[m Add module 1 раздел 3 reports[m
+[33m0d12f02[m first commit[m
+[K[?1l>[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mcd /root/EltexModule1-Practice2_clone[27mcd /root/EltexModule1-Practice2_clone
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [7mgit fetch[27mgit fetch
+[?2004lremote: Enumerating objects: 5, done.[K
+remote: Counting objects:  20% (1/5)[Kremote: Counting objects:  40% (2/5)[Kremote: Counting objects:  60% (3/5)[Kremote: Counting objects:  80% (4/5)[Kremote: Counting objects: 100% (5/5)[Kremote: Counting objects: 100% (5/5), done.[K
+remote: Compressing objects:  33% (1/3)[Kremote: Compressing objects:  66% (2/3)[Kremote: Compressing objects: 100% (3/3)[Kremote: Compressing objects: 100% (3/3), done.[K
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)[K
+Unpacking objects:  33% (1/3)Unpacking objects:  66% (2/3)Unpacking objects: 100% (3/3)Unpacking objects: 100% (3/3), 406 bytes | 406.00 KiB/s, done.
+From github.com:IlyaRube/EltexModule1-Practice2
+   11d61eb..10b7610  main       -> origin/main
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [7mgit log origin/main --oneline --decorate -3[27mgit log origin/main --oneline --decorate -3
+[?2004l[?1h=[33m10b7610[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update README[m
+[33m11d61eb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Add module 1 раздел 3 reports[m
+[33m0d12f02[m first commit[m
+[K[?1l>[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [7mgit diff main origin/main[27mgit diff main origin/main
+[?2004l[?1h=[1mdiff --git a/README.md b/README.md[m[m
+[1mindex 6e3faec..c1a111d 100644[m[m
+[1m--- a/README.md[m[m
+[1m+++ b/README.md[m[m
+[36m@@ -1 +1,2 @@[m[m
+ # Практика 2, модуль 1, Элтекс[m[m
+[32m+[m[32mОтчёты по модулю 1 добавлены в каталоги module1/task1, task2 и task3.[m[m
+[K[?1l>[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [7mgit merge origin/main[27mgit merge origin/main
+[?2004lUpdating 11d61eb..10b7610
+Fast-forward
+ README.md | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [7mgit status[27mgit status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [7mgit log --oneline --decorate -3[27mgit log --oneline --decorate -3
+[?2004l[?1h=[33m10b7610[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update README[m
+[33m11d61eb[m Add module 1 раздел 3 reports[m
+[33m0d12f02[m first commit[m
+[K[?1l>[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [7mcat README.md[27mcat README.md
+[?2004l# Практика 2, модуль 1, Элтекс
+Отчёты по модулю 1 добавлены в каталоги module1/task1, task2 и task3.
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2_cloneroot@eltex-practice2-v44:~/EltexModule1-Practice2_clone# [7mcd /root/EltexModule1-Practice2[27mcd /root/EltexModule1-Practice2
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mmkdir -p module1/practice2/task1 module1/practice2/task2 module1/practice2/task3[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkdir -p module1/practice2/task1 module1/practice2/task2 module1/practice2/task3
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mfind module1/practice2 -type d | sort[27mfind module1/practice2 -type d | sort
+[?2004lmodule1/practice2
+module1/practice2/task1
+module1/practice2/task2
+module1/practice2/task3
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mcp /root/practice2_eltex-v44_part1.log \[27m
+[7m/root/EltexModule1-Practice2/module1/practice2/task1/[27m[Acp /root/practice2_eltex-v44_part1.log \
+/root/EltexModule1-Practice2/module1/practice2/task1/
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mcp /root/practice2_eltex-v44_part2.log \[27m
+[7m/root/EltexModule1-Practice2/module1/practice2/task2/[27m[Acp /root/practice2_eltex-v44_part2.log \
+/root/EltexModule1-Practice2/module1/practice2/task2/
+[?2004l[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mfind module1/practice2 -type f -ls[27mfind module1/practice2 -type f -ls
+[?2004l     6581    192 -rw-r--r--   1 root     root       193811 Jul 15 13:35 module1/practice2/task2/practice2_eltex-v44_part2.log
+     6580    228 -rw-r--r--   1 root     root       232403 Jul 15 13:34 module1/practice2/task1/practice2_eltex-v44_part1.log
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# [7mls -lh \[27m
+[7mmodule1/practice2/task1/practice2_eltex-v44_part1.log \[27m
+[7mmodule1/practice2/task2/practice2_eltex-v44_part2.log[27m[A[Als -lh \
+module1/practice2/task1/practice2_eltex-v44_part1.log \
+module1/practice2/task2/practice2_eltex-v44_part2.log
+[?2004l-rw-r--r-- 1 root root 227K Jul 15 13:34 module1/practice2/task1/practice2_eltex-v44_part1.log
+-rw-r--r-- 1 root root 190K Jul 15 13:35 module1/practice2/task2/practice2_eltex-v44_part2.log
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# 
+Script done on 2026-07-15 13:56:27+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-07-15 13:57:10+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="148" LINES="27"]
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mecho "===== ПОВТОРНОЕ ПОДКЛЮЧЕНИЕ ПОСЛЕ РАЗРЫВА SSH ====="[27m
+[7mdate[27m
+[7mwhoami[27m
+[7mhostname[27m
+[7mpwd[27m[A[A[A[A]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# echo "===== ПОВТОРНОЕ ПОДКЛЮЧЕНИЕ ПОСЛЕ РАЗРЫВА SSH ====="
+date
+whoami
+hostname
+pwd
+[?2004l===== ПОВТОРНОЕ ПОДКЛЮЧЕНИЕ ПОСЛЕ РАЗРЫВА SSH =====
+Wed Jul 15 01:57:21 PM UTC 2026
+root
+eltex-practice2-v44
+/root
+[?2004h]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# [7mcd /root/EltexModule1-Practice2[27m
+[7mecho "===== РАЗДЕЛ 3 ЗАВЕРШЁН ====="[27m
+[7mgit status[27m
+[7mgh auth status[27m
+[7mdate[27m[A[A[A[A]0;root@eltex-practice2-v44: ~root@eltex-practice2-v44:~# cd /root/EltexModule1-Practice2
+echo "===== РАЗДЕЛ 3 ЗАВЕРШЁН ====="
+git status
+gh auth status
+date
+[?2004l===== РАЗДЕЛ 3 ЗАВЕРШЁН =====
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mmodule1/practice2/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[0;1;39mgithub.com[0m
+  [0;32m✓[0m Logged in to github.com account [0;1;39mIlyaRube[0m (/root/.config/gh/hosts.yml)
+  - Active account: [0;1;39mtrue[0m
+  - Git operations protocol: [0;1;39mssh[0m
+  - Token: [0;1;39mgho_************************************[0m
+  - Token scopes: [0;1;39m'admin:public_key', 'gist', 'read:org', 'repo'[0m
+Wed Jul 15 01:57:30 PM UTC 2026
+[?2004h]0;root@eltex-practice2-v44: ~/EltexModule1-Practice2root@eltex-practice2-v44:~/EltexModule1-Practice2# exit
+[?2004lexit
+
+Script done on 2026-07-15 13:58:01+00:00 [COMMAND_EXIT_CODE="0"]
